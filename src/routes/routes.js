@@ -8,7 +8,7 @@ const path = require('path');
 
 //imagens
 //app.use(express.static("uploads")) // jeito certo?
-routes.use(express.static('build'))
+routes.use(express.static('build2'))
 routes.use("/static", express.static("tmp/uploads"));
 
 // posts
