@@ -17,10 +17,10 @@ mongoose.connect('mongodb://127.0.0.1:27017/upload', {
 });
 
 
-//Rotas 
+//Rotas
+app.use(cors()); 
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
-app.use(cors());
 app.use(morgan('dev'));
 app.use(routes);
 
